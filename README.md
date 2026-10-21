@@ -1,71 +1,48 @@
 <h1 align="center">Hitomatito</h1>
 
-<p align="center">
-  <strong>Android &amp; Linux developer</strong><br/>
-  Kotlin · Python · Rust · C
-</p>
+<p align="center"><sub>Android &amp; Linux developer</sub></p>
 
-<p align="center">
-  <a href="https://github.com/Hitomatito?tab=followers">
-    <img alt="followers" src="https://img.shields.io/github/followers/Hitomatito?style=flat&label=followers&color=3DDC84">
-  </a>
-  <a href="https://github.com/Hitomatito?tab=repositories">
-    <img alt="public repositories" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FHitomatito&query=%24.public_repos&label=public%20repos&color=blue">
-  </a>
-</p>
+I build tools for hardware that ships without them: monitor mode on Snapdragon phones, DualSense control on Linux, and hardware inspection over ADB. Most of it ends up as something you can install today.
 
-I build tools for the devices I actually use: Android apps that talk to hardware, and Linux utilities that make the system more transparent.
+> New here? Start with **[DualSense UI](https://github.com/Hitomatito/dualsenseUI)** — a GTK4 app for DualSense controllers on Linux.
 
-I care about software that does one thing well, ships with real installers, runs tests in CI, and explains itself in the README.
+## Projects
 
----
+**[DualSense UI](https://github.com/Hitomatito/dualsenseUI)**  
+Configure and monitor DualSense and DualSense Edge controllers on Linux: lightbar, adaptive triggers, audio, battery and firmware.  
+`Python` · `GTK4` · `.deb` `.rpm` `.flatpak` · built and tested in CI
 
-## Featured projects
+**[AmWF](https://github.com/Hitomatito/AmWF)**  
+Monitor mode and packet injection on Qualcomm Snapdragon phones, without rebuilding the firmware.  
+`Kotlin` · `Android` · 2,000+ APK downloads
 
-### [DualSense UI](https://github.com/Hitomatito/dualsenseUI)
-GTK4 desktop app to configure and monitor DualSense and DualSense Edge controllers on Linux: lightbar, adaptive triggers, audio, battery and firmware.
-
-`Python` `GTK4` `Linux` · packaged as `.deb`, `.rpm` and `.flatpak`, built and tested in CI
-
-### [AmWF](https://github.com/Hitomatito/AmWF)
-Enable and disable monitor mode on Android devices with Qualcomm Snapdragon chipsets, without rebuilding the firmware.
-
-`Kotlin` `Android` · **12 stars** and **2,000+ APK downloads**
-
-### [HardWire](https://github.com/Hitomatito/HardWire)
-Android hardware inspector over USB or WiFi ADB: CPU, GPU, memory, storage, battery, display, cameras, sensors, network and SoC database.
-
-`Kotlin` `Jetpack Compose` `Room` `ADB` · CI on every push
-
----
+**[HardWire](https://github.com/Hitomatito/HardWire)**  
+Inspect any Android device over USB or Wi-Fi ADB: CPU, GPU, memory, storage, battery, display, cameras, sensors and a built-in SoC database.  
+`Kotlin` · `Jetpack Compose` · `Room` · CI on every push
 
 ## Also building
 
-| Project | Description | Stack |
+| Project | What it does | Stack |
 | --- | --- | --- |
 | [vili-hitcore](https://github.com/Hitomatito/vili-hitcore) | Custom QGKI kernel for the Xiaomi 11T Pro (vili / SM8350) | `C` `Linux` |
-| [Orbit](https://github.com/Hitomatito/Orbit) | Shows exactly which files, services and configs each app leaves on your Linux system | `Rust` |
+| [Orbit](https://github.com/Hitomatito/Orbit) | Shows which files, services and configs each app leaves on your Linux system, and uninstalls it cleanly | `Rust` |
 | [GamePulse HUD](https://github.com/Hitomatito/gamepulse_hud) | Real-time FPS, CPU/GPU temperature and memory overlay for Android | `Kotlin` |
-| [RedmagicCooler](https://github.com/Hitomatito/RedmagicCooler) | Alternative controller app for the RedMagic cooler | `Kotlin` |
+| [RedmagicCooler](https://github.com/Hitomatito/RedmagicCooler) | Control the Red Magic Cooler 5 Pro over Bluetooth LE | `Kotlin` |
 
----
+## Status
+
+Active work: **DualSense UI**, **AmWF**, **HardWire** and **vili-hitcore**. The rest is best-effort — pull requests are welcome, but I cannot promise a timeline.
+
+Some work stays private. Everything listed here is public and buildable.
 
 ## Toolbox
 
-<p>
-  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white">
-  <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white">
-  <img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white">
-  <img alt="C" src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black">
-  <img alt="GTK4" src="https://img.shields.io/badge/GTK4-4A86CF?style=flat&logo=gtk&logoColor=white">
-  <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black">
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white">
-</p>
+Kotlin · Java · Jetpack Compose · Python · Rust · C · GTK4 · Linux · Docker
+
+## Contact
+
+Open an issue in the relevant repository. That is the fastest route and keeps the answer public for the next person.
 
 ---
 
-<p align="center">
-  <em>Featured projects ship with CI, tests and installable releases. Issues and feedback are welcome.</em>
-</p>
+<sub>Last reviewed: October 2026 · Review triggers: new release, new project, role change</sub>
