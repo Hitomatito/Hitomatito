@@ -67,5 +67,5 @@ Android hardware inspector over USB or WiFi ADB: CPU, GPU, memory, storage, batt
 ---
 
 <p align="center">
-  <em>Most repositories ship with CI, tests and installable releases. Issues and feedback are welcome.</em>
+  <em>Featured projects ship with CI, tests and installable releases. Issues and feedback are welcome.</em>
 </p>
