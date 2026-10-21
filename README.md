@@ -27,7 +27,7 @@ Inspect any Android device over USB or Wi-Fi ADB: CPU, GPU, memory, storage, bat
 | [vili-hitcore](https://github.com/Hitomatito/vili-hitcore) | Custom QGKI kernel for the Xiaomi 11T Pro (vili / SM8350) | `C` `Linux` |
 | [Orbit](https://github.com/Hitomatito/Orbit) | Shows which files, services and configs each app leaves on your Linux system, and uninstalls it cleanly | `Rust` |
 | [GamePulse HUD](https://github.com/Hitomatito/gamepulse_hud) | Real-time FPS, CPU/GPU temperature and memory overlay for Android | `Kotlin` |
-| [RedmagicCooler](https://github.com/Hitomatito/RedmagicCooler) | Control the Red Magic Cooler 5 Pro over Bluetooth LE | `Kotlin` |
+| [RedmagicCooler](https://github.com/Hitomatito/RedmagicCooler) | Control Red Magic coolers over Bluetooth LE: fan, temperature and RGB | `Kotlin` |
 
 ## Status
 
