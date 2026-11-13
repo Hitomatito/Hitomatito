@@ -1,130 +1,116 @@
-<p align="center">
-  <img src="https://avatars.githubusercontent.com/u/149110357?v=4" width="112" alt="Hitomatito avatar">
-</p>
+<div align="center">
 
-<h1 align="center">Hitomatito</h1>
+```
+  ██╗  ██╗██╗████████╗ ██████╗ ███╗   ███╗ █████╗ ████████╗██╗████████╗ ██████╗
+  ██║  ██║██║╚══██╔══╝██╔═══██╗████╗ ████║██╔══██╗╚══██╔══╝██║╚══██╔══╝██╔═══██╗
+  ███████║██║   ██║   ██║   ██║██╔████╔██║███████║   ██║   ██║   ██║   ██║   ██║
+  ██╔══██║██║   ██║   ██║   ██║██║╚██╔╝██║██╔══██║   ██║   ██║   ██║   ██║   ██║
+  ██║  ██║██║   ██║   ╚██████╔╝██║ ╚═╝ ██║██║  ██║   ██║   ██║   ██║   ╚██████╔╝
+  ╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝   ╚═╝    ╚═════╝
+```
 
-<p align="center">
-  <strong>Android &amp; Linux developer building tools for hardware that ships without them.</strong>
-</p>
+**Android · Linux · Hardware**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white">
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
-  <img src="https://img.shields.io/badge/Bluetooth_LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black">
-</p>
+*Building software for the hardware gap —*  
+*the space between what your device can do and what any app lets you do.*
+
+</div>
 
 ---
 
 ## About
 
-I work at the intersection of software and hardware: Bluetooth LE reverse engineering, WiFi internals, ADB, HID, Linux kernel configuration, and device-specific quirks. I like turning *"there is no app for this"* into something people can install and use.
+I work where software meets hardware: Bluetooth LE protocol reverse engineering, WiFi internals, kernel configuration, ADB, and HID. The common thread is control — giving users access to capabilities their devices have but manufacturers don't expose.
 
-Most of my work is open source, local-first, and built around giving you full control over hardware you already own — no cloud, no accounts.
-
----
-
-## 🔥 Main Projects
-
-### [AmWF](https://github.com/Hitomatito/AmWF) &nbsp;·&nbsp; ⭐ 16 &nbsp;·&nbsp; 🍴 1
-
-> **Monitor mode and packet injection on Snapdragon Android phones — no laptop, no terminal, no firmware rebuild.**
-
-AmWF turns a rooted Qualcomm Snapdragon phone into a portable WiFi analysis tool. Enable monitor mode, verify hardware capabilities, and audit WPS security of your own routers — all from a clean, one-handed interface. No scripts, no leftover state, no internet permission.
-
-<p align="center">
-  <img src="https://img.shields.io/github/v/release/Hitomatito/AmWF?style=flat-square&label=release&color=0891b2">
-  <img src="https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
-  <img src="https://img.shields.io/badge/Root-required-orange?style=flat-square">
-  <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square">
-</p>
-
-**What it does:**
-- 📡 Enables monitor mode on Qualcomm `con_mode` interface with one tap
-- 🔍 Runs WPS Pixie Dust audits locally — no server, no account
-- ✅ Hardware compatibility check before changing anything (chipset, driver, root, injection)
-- 🔄 Restores WiFi automatically when done — no leftover state
-
-`Kotlin` · `Android` · `Qualcomm` · `NDK` · `WiFi` · `Root` · `GPL-3.0`
+Everything I ship is open source, local-first, and runs without accounts or internet permissions.
 
 ---
 
-### [RedmagicCooler](https://github.com/Hitomatito/RedmagicCooler)
+## Primary Work
 
-> **Full BLE control for RedMagic magnetic coolers — fan, thermal automation, RGB, profiles — without the official app.**
+Two projects in active development. Both are rooted in the same idea: your hardware is capable of more than its official software allows.
 
-RedmagicCooler reverse-engineers the Bluetooth LE protocol of RedMagic / Nubia magnetic coolers and exposes every feature from a native Material You Android app. Covers 8 cooler models across 6 generations, runs entirely on-device, and ships with a CI-tested release pipeline.
+<br>
 
-<p align="center">
-  <img src="https://github.com/Hitomatito/RedmagicCooler/actions/workflows/ci.yml/badge.svg" alt="CI">
-  <img src="https://img.shields.io/github/v/release/Hitomatito/RedmagicCooler?style=flat-square" alt="Latest release">
-  <img src="https://img.shields.io/badge/Android-7.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white">
-  <img src="https://img.shields.io/badge/Kotlin-2.3-7F52FF?style=flat-square&logo=kotlin&logoColor=white">
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
-</p>
+**[AmWF](https://github.com/Hitomatito/AmWF)**
+&nbsp;&nbsp;
+[![release](https://img.shields.io/github/v/release/Hitomatito/AmWF?style=flat-square&label=release&color=0891b2)](https://github.com/Hitomatito/AmWF/releases)
+[![stars](https://img.shields.io/github/stars/Hitomatito/AmWF?style=flat-square&color=f4a261)](https://github.com/Hitomatito/AmWF/stargazers)
+[![license](https://img.shields.io/badge/GPL--3.0-blue?style=flat-square)](https://github.com/Hitomatito/AmWF/blob/main/LICENSE)
 
-**What it does:**
-- 🌀 Manual fan control (0–100%) and automatic thermal mode with sensor-driven regulation
-- 🌈 Full RGB control — rainbow, breathing, solid color, off
-- 💾 Multiple saved cooler profiles — switch between devices instantly
-- 🔗 Auto-reconnect with backoff after dropped BLE connections
-- 📵 No internet permission, no telemetry, no accounts — fully local
+Monitor mode and WPS Pixie Dust auditing on rooted Qualcomm Snapdragon phones — from a clean Android UI, without a terminal or laptop. AmWF uses the Qualcomm `con_mode` interface and a patched `wpa_supplicant` to enable monitor mode and packet injection without touching firmware. Hardware is verified before anything changes; WiFi is restored automatically when done.
 
-| Generation | Model | Status |
-| :---: | --- | --- |
-| 1–4 | Dual-Core · Turbo · Magcooler · Heat Sink 4 Pro | Supported by UUID |
-| 5 | Heat Sink 5 Pro | ✅ Hardware-tested |
-| 5–6 | Heat Sink 5 · Heat Sink 6 · Heat Sink 6 Pro | Supported by UUID |
+```
+Android 7.0+   ·   Kotlin / NDK   ·   Qualcomm Snapdragon   ·   Root required
+```
 
-`Kotlin` · `Jetpack Compose` · `BLE` · `Material You` · `CI` · `MIT`
+<br>
+
+**[RedmagicCooler](https://github.com/Hitomatito/RedmagicCooler)**
+&nbsp;&nbsp;
+[![CI](https://github.com/Hitomatito/RedmagicCooler/actions/workflows/ci.yml/badge.svg)](https://github.com/Hitomatito/RedmagicCooler/actions/workflows/ci.yml)
+[![release](https://img.shields.io/github/v/release/Hitomatito/RedmagicCooler?style=flat-square)](https://github.com/Hitomatito/RedmagicCooler/releases/latest)
+[![license](https://img.shields.io/badge/MIT-blue?style=flat-square)](https://github.com/Hitomatito/RedmagicCooler/blob/main/LICENSE)
+
+Full BLE control for RedMagic / Nubia magnetic coolers — fan speed, automatic thermal regulation, RGB lighting, and saved profiles — without the official app. The BLE protocol was reverse-engineered from scratch. Supports 8 cooler models across 6 generations, identified by manufacturer data in the scan record. Runs entirely on-device: no internet permission, no telemetry.
+
+```
+Android 7.0+   ·   Kotlin 2.3   ·   Jetpack Compose   ·   BLE   ·   Material You
+```
 
 ---
 
-## More Projects
+## Other Projects
 
-| Project | What it does | Stack |
-| --- | --- | --- |
-| [HardWire](https://github.com/Hitomatito/HardWire) | Hardware inspector for Android over local or USB/Wi-Fi ADB — 10 categories, SoC lookup, snapshots | `Kotlin` `Compose` `ADB` |
-| [DualSense UI](https://github.com/Hitomatito/dualsenseUI) | GTK4 control center for DualSense & DualSense Edge on Linux — lightbar, triggers, audio, firmware | `Python` `GTK4` `Linux` |
-| [Orbit](https://github.com/Hitomatito/Orbit) | Shows every file, service, and config an app leaves on Linux, then uninstalls it cleanly | `Rust` `CLI` |
-| [tap-ducky](https://github.com/Hitomatito/tap-ducky) | Turns any rooted Android phone into a USB Rubber Ducky HID keystroke injector | `Dart` `Flutter` |
-| [BitChord](https://github.com/Hitomatito/BitChord) | YouTube Music client with clean aesthetics inspired by Apple Music | `Kotlin` `Android` |
-| [GamePulse HUD](https://github.com/Hitomatito/gamepulse_hud) | Real-time FPS, CPU/GPU temp, and memory overlay for Android games | `Kotlin` `Android` |
-| [vili-hitcore](https://github.com/Hitomatito/vili-hitcore) | Custom QGKI kernel for the Xiaomi 11T Pro (vili / SM8350) | `C` `Linux` |
+| | |
+|---|---|
+| [HardWire](https://github.com/Hitomatito/HardWire) | Hardware inspector for Android over local or USB/Wi-Fi ADB. Ten hardware categories, SoC lookup, device comparison, and history snapshots. |
+| [DualSense UI](https://github.com/Hitomatito/dualsenseUI) | GTK4 control center for DualSense and DualSense Edge on Linux. Lightbar, adaptive triggers, audio, battery, and firmware. Ships as `.deb`, `.rpm`, and Flatpak. |
+| [Orbit](https://github.com/Hitomatito/Orbit) | Tracks every file, service, and config an app registers on Linux, then removes all of it cleanly. |
+| [tap-ducky](https://github.com/Hitomatito/tap-ducky) | Turns any rooted Android phone into a USB HID keystroke injector — the Rubber Ducky, in your pocket. |
+| [vili-hitcore](https://github.com/Hitomatito/vili-hitcore) | Custom QGKI kernel for the Xiaomi 11T Pro (vili / SM8350). |
+| [GamePulse HUD](https://github.com/Hitomatito/gamepulse_hud) | Real-time FPS, CPU/GPU temperature, and memory overlay for Android games. |
+| [BitChord](https://github.com/Hitomatito/BitChord) | YouTube Music client with clean aesthetics inspired by Apple Music. |
 
-## Toolbox
+---
+
+## Stack
+
+<div align="center">
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
+![Bluetooth LE](https://img.shields.io/badge/Bluetooth_LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
 ![GTK4](https://img.shields.io/badge/GTK4-4A86CF?style=flat-square)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![Bluetooth LE](https://img.shields.io/badge/Bluetooth_LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
 
-## Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Hitomatito&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hitomatito&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="165">
-</p>
-
-## Working style
-
-Active: **AmWF** and **RedmagicCooler** are my primary focus right now. **HardWire**, **DualSense UI**, and **vili-hitcore** are ongoing. The rest is best-effort — issues and pull requests are welcome, but I cannot promise a timeline.
-
-Everything listed here is public and buildable. Some work stays private.
-
-## Contact
-
-Open an issue in the relevant repository. That is the fastest route and keeps the answer public for the next person.
+</div>
 
 ---
 
-<sub>Last reviewed: November 2026 · Built in public, one hardware quirk at a time.</sub>
+## Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Hitomatito&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="160">
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hitomatito&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="160">
+
+</div>
+
+---
+
+**AmWF** and **RedmagicCooler** are my primary focus. Everything else is best-effort — issues and pull requests are welcome.
+
+Open an issue in the relevant repository to get in touch. That is the fastest path, and it keeps the answer public for whoever comes next.
+
+---
+
+<div align="right">
+<sub>Last updated November 2026</sub>
+</div>
