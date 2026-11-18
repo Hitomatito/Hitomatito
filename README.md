@@ -48,8 +48,8 @@ Android 7.0+   ·   Kotlin / NDK   ·   Qualcomm Snapdragon   ·   Root required
 
 **[RedmagicCooler](https://github.com/Hitomatito/RedmagicCooler)**
 &nbsp;&nbsp;
-[![CI](https://github.com/Hitomatito/RedmagicCooler/actions/workflows/ci.yml/badge.svg)](https://github.com/Hitomatito/RedmagicCooler/actions/workflows/ci.yml)
-[![release](https://img.shields.io/github/v/release/Hitomatito/RedmagicCooler?style=flat-square)](https://github.com/Hitomatito/RedmagicCooler/releases/latest)
+[![CI](https://img.shields.io/github/actions/workflow/status/Hitomatito/RedmagicCooler/ci.yml?style=flat-square&label=CI)](https://github.com/Hitomatito/RedmagicCooler/actions/workflows/ci.yml)
+[![release](https://img.shields.io/github/v/release/Hitomatito/RedmagicCooler?style=flat-square&label=release&color=0891b2)](https://github.com/Hitomatito/RedmagicCooler/releases/latest)
 [![license](https://img.shields.io/badge/MIT-blue?style=flat-square)](https://github.com/Hitomatito/RedmagicCooler/blob/main/LICENSE)
 
 Full BLE control for RedMagic / Nubia magnetic coolers — fan speed, automatic thermal regulation, RGB lighting, and saved profiles — without the official app. The BLE protocol was reverse-engineered from scratch. Supports 8 cooler models across 6 generations, identified by manufacturer data in the scan record. Runs entirely on-device: no internet permission, no telemetry.
@@ -62,7 +62,7 @@ Android 7.0+   ·   Kotlin 2.3   ·   Jetpack Compose   ·   BLE   ·   Material
 
 ## Other Projects
 
-| | |
+| Project | Description |
 |---|---|
 | [HardWire](https://github.com/Hitomatito/HardWire) | Hardware inspector for Android over local or USB/Wi-Fi ADB. Ten hardware categories, SoC lookup, device comparison, and history snapshots. |
 | [DualSense UI](https://github.com/Hitomatito/dualsenseUI) | GTK4 control center for DualSense and DualSense Edge on Linux. Lightbar, adaptive triggers, audio, battery, and firmware. Ships as `.deb`, `.rpm`, and Flatpak. |
@@ -97,9 +97,9 @@ Android 7.0+   ·   Kotlin 2.3   ·   Jetpack Compose   ·   BLE   ·   Material
 
 <div align="center">
 
-<img src="https://github-readme-stats-three-theta-27.vercel.app/api?username=Hitomatito&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="160">
+<img src="https://github-readme-stats-three-theta-27.vercel.app/api?username=Hitomatito&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="160" alt="GitHub stats">
 &nbsp;&nbsp;
-<img src="https://github-readme-stats-three-theta-27.vercel.app/api/top-langs/?username=Hitomatito&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="160">
+<img src="https://github-readme-stats-three-theta-27.vercel.app/api/top-langs/?username=Hitomatito&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&exclude_repo=vili-hitcore" height="160" alt="Most used languages">
 
 </div>
 
